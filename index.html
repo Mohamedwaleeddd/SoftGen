@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SoftGen</title>
+  <style>
+        :root {
+  --main-color: dodgerblue;
+  --main-duration: 0.5s;
+}
+.p{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 23%;
+}
+.card:hover {
+	transform: scale(1.1);
+}
+.card img:hover{
+  opacity: 1;
+}
+.card img {
+	width: 170px;
+	opacity: 0.50;
+	height: 220px;
+	border: none;
+	margin-left: 20px;
+	transform: none;
+	border-radius: 5px;
+	
+}
+.card button{
+  margin-left: 70px;
+  width: 60px;
+}
+.card{
+  transition: 0.50s;
+	width: 220px;
+	height: 350px;
+	margin: 10px;
+	padding: 10px;
+	background-color: #113;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.card p{
+  margin-left: 40px;
+}
+.service:hover {
+	transform: scale(1.1);
+}
+.service img:hover{
+  opacity: 1;
+  transform:;
+}
+.service img {
+	width: 170px;
+	opacity: 0.50;
+	height: 170px;
+	border-radius: 5px;
+	border: none;
+	transform: none
+}
+.services{
+  display: flex;
+  margin-left:10%;
+  flex-wrap: wrap;
+}
+.service{
+  transition: 0.50s;
+	width: 220px;
+	height: 350px;
+	margin: 10px;
+	padding: 10px;
+	background-color: #113;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+* {
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+}
+@keyframes kia{
+  from{
+    opacity:0;
+  }to{opacity:1;}
+}
+h1{
+  color: var(--main-color);
+  border-bottom: 1px;
+  font-size: 50px;
+  font-weight: bold;
+}
+html {
+  scroll-behavior: smooth;
+}
+  img{
+    width: 250px;
+  }
+ .container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.header {
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo {
+  width: 150px;
+  border: none;
+}
+.header .links {
+  position: relative;
+}
+.header .links:hover .icon span:nth-child(2) {
+  width: 100%;
+}
+.header .links .icon {
+  width: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.header .links .icon span {
+  background-color: dodgerblue;
+  margin-bottom: 10px;
+  height: 3px;
+}
+.links{
+  text-decoration: underline;
+  color: var(--main-color);
+}
+.header .links .icon span:first-child {
+  width: 100%;
+}
+.header .links .icon span:nth-child(2) {
+  width: 60%;
+  transition: var(--main-duration);
+}
+.header .links .icon span:last-child {
+  width: 100%;
+}
+.header .links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #113;
+  position: absolute;
+  right: 0;
+  min-width: 250px;
+  top: calc(100% + 15px);
+  display: none;
+  z-index: 1;
+  color: var(--main-color);
+}
+.header .links ul::before {
+  content: "";
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #113 transparent;
+  position: absolute;
+  right: 5px;
+  top: -20px;
+}
+.header .links:hover ul {
+  display: block;
+  color: var(--main-color);
+}
+.header .links ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #fff;
+  transition: var(--main-duration);
+}
+.header .links ul li a:hover {
+  padding-left: 25px;
+  color: var(--main-color);
+  text-decoration: underline;
+}
+.header .links ul li:not(:last-child) a {
+  border-bottom: 1px solid #ddd;
+}
+body {
+  color: #fff;
+  background: #112;
+  font-family: "Work Sans", sans-serif;
+}
+@media (max-width:900px){
+  h1{
+    font-size: 25px;
+  }
+  .services{
+    margin-left: 90px
+  }
+  .skills p{
+    display: none;
+  }
+}
+.landingg{
+  height: 100vh;
+  background-image: url(bg.jpg);
+  background-size: cover;
+}
+button{
+  background: none;
+  border: 2px dodgerblue solid;
+  width: 100px;
+  height: 25px;
+  color: dodgerblue;
+  margin-top: 5px;
+  border-radius: 5px;
+  transition: 1s;
+}
+button:hover{
+  color: #000;
+  background: dodgerblue;
+}
+.landingg center{
+  position: absolute;
+  margin-top: 50%;
+  margin-left: 20%;
+}
+span{
+  color: dodgerblue;
+}
+.about{
+  display: flex;
+  align-items: center;
+}
+#skills {
+  margin-left: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.content {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.skills {
+  background-color: #113;
+  padding: 20px;
+  padding-top: 0;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #3D474B;
+  margin-top: 15%;
+}
+.skill {
+  margin-top: 20px;
+  position: relative;
+}
+
+.skill span {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.htmlbar {
+  color: #ED6915;
+}
+
+.cssbar {
+  color: #4269F5;
+}
+
+.jsbar {
+  color: #D5D649;
+}
+
+.bar {
+  background-color: #fff;
+  width: 350px;
+  height: 10px;
+  border-radius: 20px;
+}
+
+.activebar {
+  width: 0px;
+  height: 10px;
+  border-radius: 20px;
+  position: absolute;
+  transform: translateY(-10px);
+  transition: width 0.5s;
+}
+
+.activehtml {
+  width: 300px;
+  background-color: #ED6915;
+}
+
+.activecss {
+  width: 250px;
+  background-color: #4269F5;
+}
+
+.activejs {
+  width: 130px;
+  background-color: #D5D649
+}
+
+.bgskill {
+  transform: rotate(90deg) translateY(40px);
+  left: 0;
+  top: 120px;
+  position: absolute;
+  font-size: 80px;
+  opacity: 0.3;
+  color: #1f67db;
+  z-index: -10;
+}
+.cardd{
+    border: 1px dodgerblue solid;
+    border-radius: 7px;
+    color: white;
+    box-shadow: 5px 5px 5px #333;
+    transition: 1s;
+    width: 350px;
+    height: 80px;
+  }
+  .cardd h2{
+    margin-top: 20px;
+  }
+.cardd:hover{
+  transform: scale(1.1);
+}
+footer{
+  background: black;
+}
+  </style>
+</head>
+<body>
+   <div class="landing" id="about">
+     <div class="header">
+       <div class="container">
+         <div style="display: flex;align-items: center;">
+           <img class="logo" src="Facebook_creation_250798026-removebg-preview.png">
+         </div>
+         <div class="links">
+           <span class="icon">
+             <span></span>
+             <span></span>
+             <span></span>
+           </span>
+           <ul>
+             <li><a href="#about">About</a></li>
+             <li><a href="#services">Services</a></li>
+             <li><a href="#projects">Projects</a></li>
+             <li><a href="#skills">Skills</a></li>
+             <li><a href="#contact">Contact</a></li>
+           </ul>
+         </div>
+       </div>
+     </div>
+     <hr>
+ <div class="landingg">
+     <center><h1>Welcome To SoftGen!!</h1><a href="#about"><button>Learn More</button></a></center>  
+  </div>
+  <br>
+  <center>
+    <h2><span>A</span>bout us</h2>
+  </center>
+  <center>
+  <div id="about" class="about">
+    <p>We are a team develop and design websites, desktop applications. We are learned html5, css3, javascript, python and c#.We are from Egypt.</p>
+     <img src="about.gif">
+  </div>
+  </center>
+  <br>
+  <br>
+  <center>
+    <h2><span>S</span>ervices</h2>
+  </center>
+    <center>
+      <br>
+        <div id="services" class="services">
+          <br>
+          <div class="service">
+            <img src="website-design-3-xxl.png" alt="">
+            <br>
+            <h2>Web Designers</h2>
+          </div>
+          <br>
+          <div class="service">
+            <img src="6fe523255cab538d5b5afaea3b3f695c-removebg-preview.png" alt="">
+            <br>
+            <h2>Web Developers</h2>
+          </div>
+          <br>
+          <div class="service">
+            <img src="d.png" alt="">
+            <br>
+            <h3>Desktop App Developers</h3>
+          </div>
+        </div>
+      </center>
+    <br>
+    <center><h2><span>P</span>rojects</h2></center>
+    <div id="projects" class="p">
+      <div class="card">
+        <img src="p1.jpg" alt="">
+        <p>name of website</p>
+        <button>Open</button>
+      </div>
+      <div class="card">
+        <img src="p2.jpg" alt="">
+        <p>name of website</p>
+        <button>Open</button>
+      </div>
+  </div>
+  <br>
+  <br>
+  <h2 align="center"><span>S</span>kills</h2>
+  <section id="skills">
+    <div class="content">
+      <div class="skills">
+        <div class="skill">
+          <span class="htmlbar">HTML</span><br>
+          <div class="bar"></div>
+          <div class="activebar" id="bar1"></div>
+        </div>
+        <div class="skill">
+          <span class="cssbar">CSS</span><br>
+          <div class="bar"></div>
+          <div class="activebar" id="bar2"></div>
+        </div>
+        <div class="skill">
+          <span class="jsbar">JavaScript</span><br>
+          <div class="bar"></div>
+          <div class="activebar" id="bar3"></div>
+        </div>
+      </div>
+    </div>
+    <h1 class="bgskill">Skills</h1>
+    <div class="circle4"></div>
+    <div class="circle5"></div>
+  </section>
+  <br>
+  <br>
+  <center id="contact">
+    <h2><span>C</span>ontact</h2>
+    <br>
+      <div class="cardd"><h2>Email@gmail.com</h2></div>
+  </center>
+  <br>
+  <br>
+  <footer align="center">
+    <br><h4>Copyright By SoftGen ©️ In 2023.</h4>
+  </footer>
+  <script>
+    const htmlbar = document.getElementById('bar1')
+cssbar = document.getElementById('bar2')
+jsbar = document.getElementById('bar3')
+
+window.addEventListener('scroll', () => {
+  if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
+    htmlbar.classList.add('activehtml')
+    cssbar.classList.add('activecss')
+    jsbar.classList.add('activejs')
+  }
+})
+
+  </script>
+</body>
+</html>
